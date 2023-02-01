@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vörös Dominik</title>
+  </head>
+  <body>
+    <main>
+      <header class="box">
+        <h1>Űrlapok gyakorlása</h1>
+      </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+      </nav>
+      <article>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Adatok</legend>
+            <label for="vNev">Vezetéknév:</label>
+            <input type="text" id="vNev" placeholder="alma" name="vezeteknev" />
+            <label for="kNev">Keresztnév:</label>
+            <input
+              type="text"
+              id="kNev"
+              placeholder="gomba"
+              name="keresztnev"
+            />
+            <input type="submit" value="Küldés" />
+          </fieldset>
+          <fieldset>
+            <legend>Kedvenc dolgok</legend>
+            <label for="allat">Kedvenc fegyver:</label>
+            <input
+              type="text"
+              id="allat"
+              placeholder="kard"
+              name="favallat"
+            /><br />
+
+            <label for="favNumber">ideális winrate(százalék):</label>
+            <input
+              type="range"
+              id="favNumber"
+              value="50"
+              oninput="this.form.amountInput.value=this.value"
+            />
+            <br />
+            <input
+              type="number"
+              name="amountInput"
+              min="0"
+              max="100"
+              value="50"
+              oninput="this.form.favNumber.value=this.value"
+            />
+            <br />
+
+            <input type="submit" value="Küldés" />
+          </fieldset>
+        </form>
+      </article>
+      <footer>&copy; Minden jog fenntartva: Vörös</footer>
+    </main>
+  </body>
+</html>
